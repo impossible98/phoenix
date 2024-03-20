@@ -2,7 +2,7 @@ package main
 
 import (
 	// import built-in packages
-	"log"
+	"fmt"
 	"os"
 
 	// import third-party packages
@@ -19,7 +19,7 @@ func main() {
 	err := godotenvvault.Load()
 	// control flow
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		fmt.Println("Error loading .env file")
 	}
 
 	port = os.Getenv("PORT")
