@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  phoenix:
+    image: impossible98/phoenix
+    environment:
+      - PORT=9542
+    ports:
+      - "9542:9542"
+    restart: always
